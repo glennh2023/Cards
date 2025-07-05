@@ -1,0 +1,18 @@
+{
+  "name": "button-click-game",
+  "version": "1.0.0",
+  "description": "A simple MERN stack button clicking game",
+  "main": "server/server.js",
+  "scripts": {
+    "start": "cd server && npm start",
+    "dev": "cd server && npm run dev",
+    "install-server": "cd server && npm install",
+    "install-client": "cd client && npm install",
+    "install-all": "npm run install-server && npm run install-client",
+    "build-client": "cd client && npm install && npm run build",
+    "build-and-start": "npm run install-server && npm run build-client && npm start"
+  },
+  "keywords": ["mern", "react", "express", "mongodb", "game"],
+  "author": "",
+  "license": "MIT"
+} 
