@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Box, Button, Text, Grid, VStack, HStack, Flex } from '@chakra-ui/react';
+import { Box, Button, Text, Grid, VStack, HStack } from '@chakra-ui/react';
 import Card from './assets/Card';
 
 function App() {

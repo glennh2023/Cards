@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Text, VStack, HStack } from '@chakra-ui/react';
+import { Box, Text, VStack } from '@chakra-ui/react';
 
 // Helper to determine border color by suit
 const getBorderColor = (suit) => {
