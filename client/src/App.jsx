@@ -99,7 +99,7 @@ function App() {
       {/* Header */}
       <VStack spacing={4} mb={6}>
         <Text fontSize="3xl" fontWeight="bold" color="white" textAlign="center">
-          🃏 EUCHRE DECK 🃏
+          🃏 Yuker DECK 🃏
         </Text>
         <Text fontSize="lg" color="green.100" textAlign="center">
           24 Cards: 9, 10, J, Q, K, A of each suit
@@ -154,6 +154,7 @@ function App() {
                     key={card.id} 
                     card={card} 
                     isSelected={selectedCard?.id === card.id}
+                    onClick={() => handleCardClick(card)}
                   />
                 ))
               }

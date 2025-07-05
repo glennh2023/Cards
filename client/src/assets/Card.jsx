@@ -74,17 +74,22 @@ const Card = ({ card, isSelected, onClick }) => {
         zIndex={0}
       >
         {isFaceCard ? (
-          <VStack spacing={0}>
-            <Text fontSize="5xl" fontWeight="bold" color={textColor}>
-              {card.rank}
-            </Text>
-            <Text fontSize="6xl" color={textColor}>
+          <Box position="relative" h="100%" w="100%" display="flex" alignItems="center" justifyContent="center">
+            <Text fontSize="6xl" color={textColor} position="absolute" top="50%" left="50%" transform="translate(-50%, -50%)">
               {card.symbol}
             </Text>
-            <Text fontSize="md" color={textColor} fontWeight="bold">
+            <Text 
+              fontSize="sm" 
+              color={textColor} 
+              fontWeight="bold" 
+              position="absolute" 
+              bottom="8%"
+              maxW="80%"
+              textAlign="center"
+            >
               {card.rank === 'J' ? 'JACK' : card.rank === 'Q' ? 'QUEEN' : 'KING'}
             </Text>
-          </VStack>
+          </Box>
         ) : (
           <Text fontSize="6xl" color={textColor}>
             {card.symbol}
